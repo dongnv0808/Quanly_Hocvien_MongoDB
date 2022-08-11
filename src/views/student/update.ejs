@@ -32,6 +32,11 @@
                             <label for="address" class="form-label">Address</label>
                             <input type="text" name="address" class="form-control" id="address" value="<%= student.address%>">
                         </div>
+                        <div class="col-6">
+                            <label for="avatar" class="form-label">Avatar</label>
+                            <input type="file" name="avatar" class="form-control" id="avatar">
+                            <img src="<%= student.avatar%>" width="80px" height="80px" alt="">
+                        </div>
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Update</button>

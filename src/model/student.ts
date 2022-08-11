@@ -1,17 +1,17 @@
 import { model, Schema } from "mongoose";
 
 interface IStudent {
-    id: string;
     name: string;
     sex: string;
-    address: string
+    address: string;
+    avatar: string;
 };
 
 const studentSchema = new Schema<IStudent>({
-    id: String,
     name: String,
     sex: String,
-    address: String
+    address: String,
+    avatar: String
 });
 
 const Student = model<IStudent>('Student', studentSchema);
